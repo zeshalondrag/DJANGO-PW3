@@ -1,0 +1,21 @@
+{% load static %}
+<header>
+    <div class="container header-content">
+        <div class="logo">
+            <a href="{% url 'home_view' %}">SORAKEYS</a>
+        </div>
+        <div class="nav-buttons">
+            <a href="{% url 'catalog_view' %}" class="nav-button">
+                <img src="https://img.icons8.com/ios-filled/50/menu--v1.png" alt="Menu Icon"> Каталог
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Поиск по товарам">
+                    <img src="https://img.icons8.com/ios-filled/50/search.png" alt="Search Icon">
+            </div>
+            <a href="{% url 'cart_view' %}" class="nav-button">
+                <img src="https://img.icons8.com/ios-filled/50/shopping-cart.png" alt="Cart Icon"> Корзина
+            </a>
+            <a href="{% url 'login_view' %}" class="login-button">Войти</a>
+        </div>
+    </div>
+</header>
